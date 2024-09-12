@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="Formulario para hacer recomendaciones a la pagina">
+    <meta name="author" content="Frank">
+    <meta name="keywords" content="Formulario">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Reseñas</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/boletos.css">
+    <link rel="shortcut icon" href="img/TravisFavicon.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Acme&family=Protest+Revolution&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Acme&family=Concert+One&family=Protest+Revolution&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wdth,wght@90.8,300..700&family=Questrial&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <header class="header">
+        <div class="menu">
+            <img src="img/Boletas.png" alt="Descripción de la imagen" class="menu-image">
+            <span class="menu-title">Boletas</span>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="album.html">Álbumes</a></li>
+                <li><a href="ropa.html">Ropa</a></li>
+                <li><a href="conciertos.html">Conciertos</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <h1>Comprar boletas</h1>
+    <form action="#" method="post" id="registroForm">
+        <fieldset>
+            <legend>Información Personal</legend>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Nombre" required minlength="3" maxlength="30">
+
+            <label for="apellido">Apellido:</label>
+            <input type="text" id="apellido" name="apellido" placeholder="Apellido" required minlength="3" maxlength="30">>
+
+            <label for="email"> Email:</label>
+            <input type="email" id="email" name="email" required placeholder="sucorreo@email.com">
+
+            <label for="contrasena">Contraseña:</label>
+            <input type="password" id="contrasena" name="contrasena" placeholder="Contraseña" required>
+
+            <label for="genero">Género:</label>
+            <input type="radio" id="genero_masculino" name="genero" value="masculino" required>
+            <label for="genero_masculino">Masculino</label>
+            <input type="radio" id="genero_femenino" name="genero" value="femenino" required>
+            <label for="genero_femenino">Femenino</label>
+
+            <label for="fecha_nacimiento">Fecha de Nacimiento:</label>
+            <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" required>
+
+            <label for="telefono">Teléfono:</label>
+            <input type="tel" id="telefono" name="telefono" placeholder="Numero de telefono" required>
+
+            <label for="direccion">Dirección:</label>
+            <input type="text" id="direccion" name="direccion" placeholder="Direccion" required>
+        </fieldset>
+
+        <fieldset>
+            <legend>Numero de boletos(Maximo 5)</legend>
+            <label for="opciones">Selecciona una opción:</label>
+            <select id="opciones" required>
+                <option value="opcion1">1</option>
+                <option value="opcion2">2</option>
+                <option value="opcion3">3</option>
+                <option value="opcion4">4</option>
+                <option value="opcion5">5</option>
+            </select>
+        </fieldset>
+
+        <fieldset>
+            <legend>Pago</legend>
+            <label for="opciones">Selecciona una opción:</label>
+            <select id="opciones" required>
+                <option value="opcion1">Paypal</option>
+                <option value="opcion2">Nequi</option>
+                <option value="opcion3">Bancolombia</option>
+                <option value="opcion4">DaviPlata</option>
+            </select>
+        </fieldset>
+
+        <fieldset>
+            <legend>Numero de banco</legend>
+            <label for="telefono">Numero:</label>
+        <input type="tel" id="telefono" name="telefono" placeholder="Numero de banco" required>
+        </fieldset>
+
+        <button type="submit">Comprar</button>
+        <button type="reset">Cancelar</button>
+    </form>
+
+    <footer class="site-footer seccion">
+        <div class="contenedor contenedor-footer">
+            <nav class="navegacion">
+                <a href="https://www.instagram.com/cactusjack/?hl=es">Marca</a>
+                <a href="https://shop.travisscott.com/">Tienda</a>
+                <a href="https://open.spotify.com/intl-es/artist/0Y5tJX1MQlPlqiwlOH1tJY?si=zt4T4SUrQ1eQNXsBFKlqRA">Spotify</a>
+                <a href="formulario.html">Reseña</a>
+                <a href="https://www.instagram.com/travisscott/?hl=es">Instagram</a>
+            </nav>
+            <p class="copyright">Todos los Derechos Reservados 2019 &copy; </p>
+        </div>
+    </footer>
+</body>
+</html>
+

@@ -1,0 +1,262 @@
+:root {
+   --negro: #000000;
+   --blanco: #ffffff;
+   --GrisOscuro: #131313;
+   --MarronOscuro: #3d342b;
+   --RojoOscuro: #ac3129;
+   --MarronClaro: #d8cbba;
+}
+
+/* Estilos para encabezados */
+h1 {
+   font-size: 35px;
+   font-family: Concert One, sans-serif;
+   font-weight: bold;
+   color: #ffffff;
+   text-align: center;
+   margin: 10px;
+}
+
+h2 {
+   font-weight: bold;
+   font-size: 23px;
+   text-align: center;
+   font-family: Fredoka, sans-serif;
+   font-optical-sizing: auto;
+   font-style: normal;
+
+   color: #a9927d;
+}
+
+strong {
+color: #756754;
+
+}
+
+/* Estilos para títulos de álbum */
+.TituloAlbum {
+   font-size: 20px;
+   font-family: Concert One, sans-serif;
+   font-weight: bold;
+   color: #d8cbba;
+   text-align: center;
+   margin: 10px;
+}
+
+/* Estilos para párrafos */
+p {
+   font-family: Lato, sans-serif;
+   margin: 20px;
+}
+
+/* Estilos para el cuerpo de la página */
+body {
+   text-align: center;
+   width: 100%;
+   margin: 0px auto;
+   background-image: url('img/background travis.jpg');
+   background-repeat: repeat; 
+   background-size: 650px;
+}
+
+/* Estilos para el encabezado */
+.header {
+   align-items: center;
+}
+
+.header h1 {
+   text-align: center;
+}
+
+/* Estilos para el menú */
+.menu {
+   background: #33221b;
+   box-shadow: 1px 11px 22px 0px var(--negro);
+   border-radius: 10px;
+   padding: 15px 25px;
+   text-align: right;
+   width: 75.8rem; 
+}
+
+.menu-title {
+   float: left;
+   margin-left: 80px;
+   color: #d8cbba;
+   font-family: Acme, sans-serif;
+   font-style: normal;
+   font-size: 50px;
+   line-height: 40px;
+   margin-top: 17px;
+}
+
+.menu-image {
+   float: left;
+   margin-right: -70px;
+   width: 80px;
+   display: block;
+   height: 70px;
+}
+
+.menu-image:hover {
+   transform: rotate(370deg);
+   transition:5s ease;
+}
+
+.menu li {
+   list-style: none;
+   border-radius: 10px;
+   padding: 10px;
+   font-family: Concert One, sans-serif;
+   display: inline-block;
+   text-decoration: none;
+}
+
+.menu a:hover {
+   color: #805d38;
+   transition: 0.3s ease;
+}
+
+.menu li a {
+   text-decoration: none;
+   color: #d8cbba;
+   font-size: 19px;
+}
+
+/* Estilos para las secciones */
+.seccion {
+   width: 80%;
+   margin: 0px auto;
+}
+
+/* Estilos para los artículos */
+@keyframes show {
+   from {
+       opacity: 0;
+       scale: 0%;
+   }
+   to {
+       opacity: 1;
+       scale:100%;
+}
+
+}
+
+article {
+   background: #201712;
+   border-radius: 10px;
+   border: 1px solid #fffcfc;
+   margin: 20px;
+   width: 60rem;
+   color: #f9f9f9;
+   view-timeline: --image;
+    view-timeline-axis: block;
+    animation-timeline: --image;
+    animation-name: show;
+    animation-range: entry 25% cover 50%;
+    animation-fill-mode:both;
+}
+
+/* Estilos para la lista de álbumes */
+.album-lista {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   list-style: none;
+   padding: 0;
+}
+
+.album-item {
+   width: calc(50% - 110px); 
+   margin: 10px; 
+}
+
+.album-imagen {
+   width: 200px;
+   display: block;
+   margin: 0px auto;
+   transition: transform 0.3s ease;
+   border-radius: 10px;
+   box-shadow: 10px 14px 25px 1px var(--negro);
+}
+
+.album-imagen:hover {
+   transform: scale(1.1);
+}
+
+.album-lista li a {
+   text-decoration: none;
+   color: #ffffff; 
+}
+
+.DescripcionAlbum {
+   text-align: center; 
+   margin-left: 400px ; 
+   width: 400px; 
+   margin-top: -220px;
+   font-family: Fredoka, sans-serif;
+}
+
+/* Estilos para el pie de página */
+.pie {
+   clear: both;
+   padding: 20px;
+   background: #2d3436;
+   color: #ffffff;
+   font-family: Concert One, sans-serif;
+}
+
+@media (min-width: 768px) {
+   .contenedor-footer {
+       display: flex;
+       justify-content: space-between;
+   }
+}
+
+.site-footer {
+   background-color: #33221b;
+   margin: 0px;
+   box-shadow: 0px -12px 15px 0px rgba(0,0,0,0.75);
+   width: 78.9rem;
+}
+
+.contenedor-footer {
+   padding: 3rem 0;
+   text-align: center;
+}
+
+.navegacion a {
+   text-decoration: none;
+   color: white;
+   margin-left: 20px;
+}
+
+.navegacion a:hover {
+   color: #805d38;
+   transition: color 0.3s ease;
+}
+
+@media (min-width: 768px) {
+   .site-footer nav {
+       display: block;
+       font-family: Concert One, sans-serif;
+   }
+}
+
+.copyright {
+   margin: 0;
+   color: #ffffff;
+   margin-right: 30px;
+   font-family: Concert One, sans-serif;
+}
+
+@media screen and (max-width: 900px) {
+	
+}
+
+@media screen and (max-width: 700px) {
+	
+}
+
+@media screen and (max-width: 600px) {
+
+}

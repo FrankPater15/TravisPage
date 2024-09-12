@@ -1,0 +1,245 @@
+/* Variables */
+:root {
+   --negro: #000000;
+   --blanco: #ffffff;
+   --GrisOscuro: #131313;
+   --MarronOscuro: #3d342b;
+   --RojoOscuro: #ac3129;
+   --MarronClaro: #d8cbba;
+}
+
+/* Estilos generales */
+body {
+   text-align: center;
+   width: 100%;
+   margin: 0 auto;
+   background-image: url('img/background travis 7.jpg');
+   background-repeat: repeat; 
+   background-size: 750px;
+}
+
+/* Encabezados */
+h1 {
+   font-size: 35px;
+   font-family: Concert One, sans-serif;
+   font-weight: bold;
+   color: #fefefe;
+   text-align: center;
+   margin: 10px;
+}
+
+h2 {
+   font-weight: bold;
+   font-size: 23px;
+   text-align: center;
+   font-family: Questrial, sans-serif;
+   color: #d8cbba;
+}
+
+/* Párrafos */
+p {
+   font-family: Lato, sans-serif;
+   margin: 20px;
+}
+
+/* Menú */
+.menu {
+   background: #655c55;
+   box-shadow: 1px 11px 22px 0px var(--negro);
+   border-radius: 10px 10px 10px 10px;
+   padding: 15px 25px;
+   text-align: right;
+   width: 75.8rem; 
+}
+
+.menu-title {
+   float: left;
+   margin-left: 80px;
+   color: #d8cbba;
+   font-family: Acme, sans-serif;
+   font-style: normal;
+   font-size: 50px;
+   line-height: 40px;
+   margin-top: 17px;
+}
+
+.menu-image {
+   float: left;
+   margin-right: -70px;
+   width: 80px;
+   display: block;
+   height: 70px;
+}
+
+.menu-image:hover {
+   transform: rotate(370deg);
+   transition:5s ease;
+}
+
+.menu li {
+   list-style: none;
+   border-radius: 10px 10px 10px 10px;
+   padding: 10px;
+   font-family: Concert One, sans-serif;
+   display: inline-block;
+   text-decoration: none;
+}
+
+.menu a:hover {
+   color: #3a3731;;
+   transition: 0.3s ease;
+}
+
+.menu li a {
+   text-decoration: none;
+   color: #d8cbba;
+   font-size: 19px;
+}
+
+/* Secciones */
+.seccion {
+   width: 50%;
+}
+
+/* Artículos */
+article {
+   background: #383330;
+   border-radius: 10px 10px 10px 10px;
+   border: 1px solid #d8cbba;
+   margin: 50px;
+   width: 70rem ;
+   color: #f9f9f9;
+}
+
+/* Lista de zapatos */
+.zapatos-lista {
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   grid-gap: 20px;
+   list-style: none;
+   padding: 0; 
+}
+
+.zapatos-lista li {
+   display: inline-block; 
+   margin-right: 10px; 
+}
+
+/* Información de los zapatos */
+.zapato-info {
+   text-align: center;
+   position: relative;
+}
+
+.zapatosimg:hover {
+   transform: scale(1.1); 
+}
+
+.zapato-info img {
+   margin-right: 10px;
+}
+
+.zapatosimg {
+   width: 250px; 
+   height: auto;
+   transition: transform 0.3s ease; 
+   border-radius: 10px ;
+   box-shadow: 10px 14px 25px 1px var(--negro);
+}
+
+.zapato-info p {
+   position: absolute; 
+   bottom: 0; 
+   left: 140px;
+   font-family: Concert One, sans-serif;
+   border-radius: 10px; 
+   width: 250px; 
+   background-color: #d8cbbada; 
+   color: rgba(0, 0, 0, 0.783); 
+   padding: 0px; 
+   margin: 0px; 
+}
+
+/* Enlaces */
+.link {
+   padding: 5px 15px;
+}
+
+.link a {
+   list-style: none;
+   padding: 5px;
+   font-family: Concert One, sans-serif;
+   display: inline-block;
+   font-size: 20px;
+   text-decoration: none ;
+   color: #d8cbba;
+   background:#655c55 ;
+   border-radius: 10px;
+}
+
+.link a:hover {
+   color: #3a3731;; 
+   transition: 0.3s ease;
+}
+
+/* Pie de página */
+@media (min-width: 768px) {
+   .contenedor-footer {
+       display: flex;
+       justify-content: space-between;
+   }
+}
+
+.site-footer {
+   background-color:#655c55;
+   margin: 0px;
+   width: 78.9rem;
+   box-shadow: 0px -12px 15px 0px rgba(0,0,0,0.75);
+   border-radius: 10px;
+}
+.contenedor-footer {
+   padding: 3rem 0;
+   text-align: center;
+}
+
+.navegacion a {
+   text-decoration: none;
+   color: #d8cbba;
+   margin-left: 20px;
+}
+
+.navegacion a:hover {
+   color: #3a3731; 
+   transition: color 0.3s ease; 
+}
+
+
+@media (min-width: 768px) {
+   .site-footer nav {
+       display: block;
+       font-family: Concert One, sans-serif;
+   }
+}
+
+.copyright {
+   margin: 0;
+   color: #d8cbba;
+   margin-right: 30px;
+   font-family: Concert One, sans-serif;
+}
+
+@media screen and (max-width: 900px) {
+	
+}
+
+@media screen and (max-width: 700px) {
+	
+}
+
+@media screen and (max-width: 600px) {
+
+}
+
+
+
+

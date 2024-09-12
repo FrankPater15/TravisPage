@@ -1,0 +1,215 @@
+:root {
+    --negro: #000000;
+    --blanco: #ffffff;
+    --GrisOscuro: #131313;
+    --MarronOscuro: #3d342b;
+    --RojoOscuro: #ac3129;
+    --MarronClaro: #d8cbba;
+}
+
+
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,1) 7%, rgba(138,136,98,1) 50%, rgba(0,0,0,1) 93%);
+    width: 100%;
+    margin: 0px auto;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: var(--GrisOscuro);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #ffffff;
+    font-family: Fredoka, sans-serif;
+}
+
+/* Estilos de etiquetas */
+label {
+    font-family: Fredoka, sans-serif;
+    color: var(--MarronClaro);
+}
+
+/* Estilos de campos de entrada */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="tel"],
+select,
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ffffff;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-family: Fredoka, sans-serif;
+}
+
+/* Estilos de botones */
+button {
+    background-color: var(--MarronOscuro);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 10px;
+    font-family: Fredoka, sans-serif;
+    transition: background-color 0.3s ease; 
+}
+
+button[type="submit"]:hover {
+    background-color: green ;
+}
+
+button[type="reset"]:hover {
+    background-color: #f44336;
+}
+
+/* Estilos de campos de opciones */
+fieldset {
+    margin-bottom: 20px;
+    border: 1px solid #ffffff;
+    border-radius: 4px;
+    padding: 10px;
+    font-family: Fredoka, sans-serif;
+}
+
+legend {
+    font-size: 18px;
+    font-weight: bold;
+    color: var(--blanco);
+    font-family: Fredoka, sans-serif;
+}
+
+/* Estilos para el encabezado */
+.header {
+    align-items: center;
+}
+
+.header h1 {
+    text-align: center;
+}
+
+.menu {
+    background: var(--GrisOscuro);
+    box-shadow: 1px 11px 22px 0px rgba(0,0,0,0.82);
+    border-radius: 10px 10px 10px 10px;
+    padding: 15px 25px;
+    text-align: right;
+    width: 75.8rem;
+
+}
+
+.menu-title {
+    float: left;
+    margin-left: 80px; 
+    color: #ffffff;
+    font-family: Acme, sans-serif;
+    font-style: normal;
+    font-size: 50px;
+    line-height: 40px;
+    margin-top: 18px;
+  }
+
+  .menu-image {
+    float: left; 
+    margin-right: -70px; 
+    width: 80px;
+    display: block;
+    height: 70px;
+}
+
+.menu-image:hover {
+    transform: rotate(370deg);
+    transition:5s ease;
+}
+
+.menu li {
+    list-style: none;
+    border-radius: 10px 10px 10px 10px;
+    padding: 10px;
+    font-family: Concert One, sans-serif;
+    font-size: 20px;
+    display: inline-block;
+    text-decoration: none;
+
+}
+
+.menu a:hover {
+    color: #ac3129;
+    transition: 0.3s ease;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: #ffffff;
+    }
+
+
+    @media (min-width: 768px) {
+        .contenedor-footer {
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+    
+    .site-footer {
+        background-color:#2c251f;
+        margin: 0px;
+        box-shadow: 0px -12px 15px 0px rgba(0,0,0,0.75);
+        margin-top: 10px;
+        border-radius: 10px;
+        width: 78.9rem;
+    }
+    .contenedor-footer {
+        padding: 3rem 0;
+        text-align: center;
+    }
+    
+    .navegacion a {
+        text-decoration: none;
+        color: white;
+        margin-left: 20px;
+    }
+    
+    .navegacion a:hover {
+        color: #ac3129; 
+        transition: color 0.3s ease; 
+    }
+    
+    
+    @media (min-width: 768px) {
+        .site-footer nav {
+            display: block;
+            font-family: Concert One, sans-serif;
+        }
+    }
+    
+    .copyright {
+        margin: 0;
+        color: #ffffff;
+        margin-right: 30px;
+        font-family: Concert One, sans-serif;
+    }
+
+    @media screen and (max-width: 900px) {
+	
+    }
+    
+    @media screen and (max-width: 700px) {
+        
+    }
+    
+    @media screen and (max-width: 600px) {
+    
+    }
